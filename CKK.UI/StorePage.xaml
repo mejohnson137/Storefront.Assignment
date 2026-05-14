@@ -1,0 +1,25 @@
+﻿<Window x:Class="CKK.UI.StorePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CKK.UI"
+        mc:Ignorable="d"
+        Title="StorePage" Height="450" Width="800">
+    <Window.Resources>
+    </Window.Resources>
+    <Grid x:Name="StoreFront" Background="#7FFF0000">
+        <Rectangle HorizontalAlignment="Left" Height="346" Stroke="Black" VerticalAlignment="Center" Width="696" Fill="White" Margin="72,0,0,0"/>
+        <Label x:Name="SearchTag" Content="Item Search:" HorizontalAlignment="Left" Margin="103,71,0,0" VerticalAlignment="Top" Height="38" Width="97" FontSize="16"/>
+        <TextBox x:Name="SearchBar" HorizontalAlignment="Left" Height="38" Margin="214,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="523" BorderBrush="Black" FontSize="16" KeyDown="SearchBar_KeyDown"/>
+        <ListBox x:Name="Items_List" HorizontalAlignment="Left" Height="220" Margin="103,114,0,0" VerticalAlignment="Top" Width="634" BorderBrush="Black">
+            <Grid Height="178" Width="619">
+                Grid.ColumnDefinition Width="Auto"
+            </Grid>
+        </ListBox>
+        <Button x:Name="Add" Content="Add Item" HorizontalAlignment="Left" Height="31" Margin="114,344,0,0" VerticalAlignment="Top" Width="86" Background="Red" Foreground="Black" Click="Add_Click"/>
+        <Button x:Name="Edit" Content="Edit Item" HorizontalAlignment="Left" Height="30" Margin="519,344,0,0" VerticalAlignment="Top" Width="86" Background="#FFF57F7F" Click="Edit_Click"/>
+        <Button x:Name="Remove" Content="Remove Item" HorizontalAlignment="Left" Height="31" Margin="639,344,0,0" VerticalAlignment="Top" Width="86" Background="#FFD00000" Foreground="White" Click="Remove_Click"/>
+
+    </Grid>
+</Window>
